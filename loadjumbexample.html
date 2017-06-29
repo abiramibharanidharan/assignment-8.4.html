@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <!--It is used to link the bootstrap style sheet liberary and jquery liberary-->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+                integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" 
+                integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+          <script>
+              /*click a function to hide and show and change the function*/
+              $(document).ready(function(){
+                     $("#hide").click(function(){
+                     $("li").hide();
+                });
+              $("#show").click(function(){
+                      $("li").show();
+                });
+
+              $("#change").click(function(){
+                      $("li").css({"color": "blue", "font-size": "200%"});
+         
+                 });
+            });
+          </script>
+     </head>
+     <body>
+          <div class="container">
+               <div class="jumbotron">
+                  <h1> welcome to web development fundamental</h1>
+                      <ul>
+                          <li>Html</li>
+                          <li>Css</li>
+                          <li>javascript</li>
+                          <li>jquery</li>
+                        </ul>
+                    <p>If you click on the "Hide" button, list will disappear.</p>
+                    <p>If you click on the "show" button, list will appear.</p>
+
+                    <button id="hide">Hide</button>
+                    <button id="show">Show</button>
+                    <button id="change">Change</button>
+                </div>
+           </div>
+     </body>
+</html>
